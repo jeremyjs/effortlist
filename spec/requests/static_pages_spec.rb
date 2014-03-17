@@ -1,6 +1,10 @@
 require 'spec_helper'
 
 describe "Static pages" do
+  it "should have the title Effortlist" do
+    visit '/static_pages/home'
+    expect(page).to have_title("Effortlist")
+  end
   describe "Home page" do
     it "should have the content 'Effortlist'" do
       visit '/static_pages/home'
