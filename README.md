@@ -1,3 +1,3 @@
-== README
+# Effortlist
 
-# Effortlist: Simple and clean todo list application
+### Simple and clean todo list application
