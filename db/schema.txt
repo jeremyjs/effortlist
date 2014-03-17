@@ -1,0 +1,22 @@
+User
+email:String
+password:String
+name:String
+has_and_belongs_to_many:projects
+
+Project
+name:String
+details:String
+start_date:DateTime
+end_date:DateTime
+has_and_belongs_to_many:users
+has_and_belongs_to_many:items
+
+Item
+name:String
+details:String
+start_date:DateTime
+end_date:DateTime
+status:enum[ :todo, :doing, :done ]
+deadline:enum[ :today, :tomorrow, :this_week, :next_week, :later ]
+has_and_belongs_to_many:projects
