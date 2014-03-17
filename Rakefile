@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-LiveData::Application.load_tasks
+Effortlist::Application.load_tasks

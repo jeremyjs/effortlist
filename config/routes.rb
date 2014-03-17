@@ -1,4 +1,4 @@
-LiveData::Application.routes.draw do
+Effortlist::Application.routes.draw do
   resources :items
 
   resources :projects
