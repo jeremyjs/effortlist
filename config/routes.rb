@@ -1,10 +1,15 @@
 Effortlist::Application.routes.draw do
+
+  get "sign_in/index"
+  get "sign_in/signin"
+  get "sign_in/signup"
+
   get "static_pages/home"
   get "static_pages/help"
+  get "static_pages/about"
+
   resources :items
-
   resources :projects
-
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
